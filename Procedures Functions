@@ -1,0 +1,29 @@
+
+def first_joke(): 
+    print("How do you get a squirrel to like you?")
+    print("Act like a nut...")
+        
+def second_joke(): 
+    print("I had an argument with a 90 degree angle")
+    print("turns out it was right..")
+    
+def third_joke():
+    print("I told a bad chemistry joke once.")
+    print("it didn't get much of a reaction..")
+
+answer = input("Would you like to hear a joke? ") 
+if answer == "yes": 
+    number = input("Which joke would you like to hear? Number 1, 2 or 3. ")
+    if  number == "1": 
+        first_joke()
+    elif number == "2": 
+        second_joke()
+    elif number == "3":
+        third_joke()
+else: 
+    print("It seems like my jokes are to funny for you to hear. ")
+
+# 2 - Parameter Passing
+Anything that you put in the () will be called when you call the function 
+
+    
