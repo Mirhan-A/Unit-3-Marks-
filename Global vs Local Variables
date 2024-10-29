@@ -1,0 +1,54 @@
+""" Information
+Create a global variable: Start by defining a global variable outside any function. 
+Name it global_var and set it to a string value, e.g., "I am global!".
+Define a function: Create a function called print_variables(). Inside this function:
+Print the global variable global_var.
+Define a local variable named local_var and set it to a string value, e.g., "I am local!".
+Print the local variable local_var.
+Call the function: After defining the function, call print_variables() to see the output.
+Try to access local variable: Outside of the function, try to print local_var. 
+Observe what happens.
+"""
+
+global_var = "I am global!"
+
+def print_variables(): 
+    print(global_var )   
+    local_var = "I am local!"
+    print(local_var) 
+
+print_variables() 
+
+"""Notes before I add print(local_var)
+Before I printed local_var outside the function
+The output of the code worked perfectly without any mistakes
+output: 
+I am global! 
+I am local!
+"""
+global_var = "I am global!"
+
+def print_variables(): 
+    print(global_var )   
+    local_var = "I am local!"
+    print(local_var) 
+
+print_variables() 
+
+
+try: 
+    print(local_var)
+except NameError as e: 
+    print(f"Error: {e}")
+
+"""Notes after I added print(local_var)
+when I added try and except nameerror as e 
+when it would print the code would work printing out 
+I am global!
+I am local! 
+and it would print out 
+Error: name 'local_var' is not defined
+because it local_var wasn't a global variable and named outside the function 
+it was named inside the function
+
+"""
