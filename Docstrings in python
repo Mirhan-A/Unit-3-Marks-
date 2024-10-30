@@ -24,7 +24,7 @@ def square(number):
     (number) = either a int or float = the number to be squared 
     Return either a int or a float whatever the number that was inputted to be squared
     """
-    return number * number 
+    return number ** 2 
 
 
 
