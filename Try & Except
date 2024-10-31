@@ -1,0 +1,41 @@
+# Task 1 
+
+"""
+Write code that takes a number from the user and multiplies it by 10. 
+If they enter something that isn’t a number, 
+print a message like “Please enter a valid number.”
+"""
+
+try: 
+    number = int(input("Pick any number: ")) 
+    
+    result = number * 10 
+    print(result)
+
+except ValueError: 
+    print("Please enter a valid number.")
+
+else: 
+    print("The number was multiplied!")
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
